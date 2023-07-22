@@ -1,0 +1,47 @@
+[
+    {
+        "_id": "1",
+        "collegeImage": "https://i.ibb.co/88FVhGj/Rajshahi-College-Pic-768x352.jpg",
+        "collegeName": "Rajshahi College",
+        "collegeRating": 4.5,
+        "admissionDate": "2023-09-01",
+        "numberOfResearch": 150,
+        "photoGallery": [
+            "https://example.com/photos/photo1.jpg",
+            "https://example.com/photos/photo2.jpg",
+            "https://example.com/photos/photo3.jpg",
+            "https://example.com/photos/photo4.jpg",
+            "https://example.com/photos/photo5.jpg"
+        ],
+        "events": [
+            {
+                "eventName": "Annual Cultural Fest",
+                "eventDate": "2023-10-15",
+                "eventLocation": "Campus Grounds",
+                "eventDescription": "A grand celebration of culture with music, dance, and performances."
+            },
+            {
+                "eventName": "Tech Expo",
+                "eventDate": "2023-11-20",
+                "eventLocation": "Conference Hall",
+                "eventDescription": "Showcasing innovative projects and technological advancements."
+            }
+        ],
+        "sports": [
+            {
+                "sportName": "Football",
+                "teamSize": 11,
+                "coachName": "John Smith",
+                "trainingSchedule": "Monday, Wednesday, Friday - 4 PM to 6 PM",
+                "homeGround": "Campus Stadium"
+            },
+            {
+                "sportName": "Basketball",
+                "teamSize": 5,
+                "coachName": "Emily Johnson",
+                "trainingSchedule": "Tuesday, Thursday - 5 PM to 7 PM",
+                "homeGround": "Basketball Court"
+            }
+        ]
+    }
+]

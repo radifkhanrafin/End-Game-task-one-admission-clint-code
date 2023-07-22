@@ -4,6 +4,7 @@ import {
 } from "react-router-dom";
 import App from "../App";
 import Collage from "../Pages/Collage/Collage";
+import CollageDetails from "../Pages/Collage/CollageDetails/CollageDetails";
 
 const router = createBrowserRouter([
     {
@@ -14,7 +15,11 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Collage></Collage>
-            }
+            },
+            {
+                path: '/collage-details',
+                element: <CollageDetails></CollageDetails>
+            },
         ]
     },
 ]);
