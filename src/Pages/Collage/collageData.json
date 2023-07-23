@@ -1,27 +1,25 @@
 [
     {
-        "_id": "1",
         "collegeImage": "https://i.ibb.co/88FVhGj/Rajshahi-College-Pic-768x352.jpg",
-        "collegeName": "Rajshahi College",
+        "collegeName": "Rajshahi College , Rajshahi",
+        "minGpaSsc": "5 Out Of 5",
+        "minGpaHsc": "5 Out Of 5",
+        "totalGpa": "10 Out Of 10",
         "collegeRating": 4.5,
         "admissionDate": "2023-09-01",
         "numberOfResearch": 150,
-        "photoGallery": [
-            "https://example.com/photos/photo1.jpg",
-            "https://example.com/photos/photo2.jpg",
-            "https://example.com/photos/photo3.jpg",
-            "https://example.com/photos/photo4.jpg",
-            "https://example.com/photos/photo5.jpg"
-        ],
+        
         "events": [
             {
-                "eventName": "Annual Cultural Fest",
+                "eventName": "Annual Cultural Fest Rajshahi",
+                "eventBanner": "https://i.ibb.co/h7NQ31m/th-2.jpg",
                 "eventDate": "2023-10-15",
                 "eventLocation": "Campus Grounds",
                 "eventDescription": "A grand celebration of culture with music, dance, and performances."
             },
             {
                 "eventName": "Tech Expo",
+                "eventBanner": "https://i.ibb.co/mDDZ0pZ/th-3.jpg",
                 "eventDate": "2023-11-20",
                 "eventLocation": "Conference Hall",
                 "eventDescription": "Showcasing innovative projects and technological advancements."
@@ -30,6 +28,7 @@
         "sports": [
             {
                 "sportName": "Football",
+                "sportBanner": "https://i.ibb.co/4VRHcG2/football-banner-12215919.webp",
                 "teamSize": 11,
                 "coachName": "John Smith",
                 "trainingSchedule": "Monday, Wednesday, Friday - 4 PM to 6 PM",
@@ -37,6 +36,183 @@
             },
             {
                 "sportName": "Basketball",
+                "sportBanner": "https://i.ibb.co/ZfZFj1Q/th-4.jpg",
+                "teamSize": 5,
+                "coachName": "Emily Johnson",
+                "trainingSchedule": "Tuesday, Thursday - 5 PM to 7 PM",
+                "homeGround": "Basketball Court"
+            }
+        ]
+    },
+    {
+        "collegeImage": "https://i.ibb.co/k3tzQRv/hqdefault.jpg",
+        "collegeName": "New Government Degree College, Rajshahi.",
+        "minGpaSsc": "3 Out Of 5",
+        "minGpaHsc": "4 Out Of 5",
+        "totalGpa": "9 Out Of 10",
+        "collegeRating": 4.5,
+        "admissionDate": "2023-09-01",
+        "numberOfResearch": 150,
+        "events": [
+            {
+                "eventName": "Annual Cultural Fest Rajshahi",
+                "eventBanner": "https://i.ibb.co/h7NQ31m/th-2.jpg",
+                "eventDate": "2023-10-15",
+                "eventLocation": "Campus Grounds",
+                "eventDescription": "A grand celebration of culture with music, dance, and performances."
+            },
+            {
+                "eventName": "Tech Expo",
+                "eventBanner": "https://i.ibb.co/mDDZ0pZ/th-3.jpg",
+                "eventDate": "2023-11-20",
+                "eventLocation": "Conference Hall",
+                "eventDescription": "Showcasing innovative projects and technological advancements."
+            }
+        ],
+        "sports": [
+            {
+                "sportName": "Football",
+                "sportBanner": "https://i.ibb.co/4VRHcG2/football-banner-12215919.webp",
+                "teamSize": 11,
+                "coachName": "John Smith",
+                "trainingSchedule": "Monday, Wednesday, Friday - 4 PM to 6 PM",
+                "homeGround": "Campus Stadium"
+            },
+            {
+                "sportName": "Basketball",
+                "sportBanner": "https://i.ibb.co/ZfZFj1Q/th-4.jpg",
+                "teamSize": 5,
+                "coachName": "Emily Johnson",
+                "trainingSchedule": "Tuesday, Thursday - 5 PM to 7 PM",
+                "homeGround": "Basketball Court"
+            }
+        ]
+    },
+    {
+        "collegeImage": " https://i.ibb.co/M52GNh6/th-5.jpg",
+        "collegeName": "Edward College , Pabna",
+        "minGpaSsc": "3.5 Out Of 5",
+        "minGpaHsc": "4 Out Of 5",
+        "totalGpa": "10 Out Of 10",
+        "collegeRating": 4.5,
+        "admissionDate": "2023-09-01",
+        "numberOfResearch": 150,
+        "events": [
+            {
+                "eventName": "Annual Cultural Fest Edward",
+                "eventBanner": "https://i.ibb.co/h7NQ31m/th-2.jpg",
+                "eventDate": "2023-10-15",
+                "eventLocation": "Campus Grounds",
+                "eventDescription": "A grand celebration of culture with music, dance, and performances."
+            },
+            {
+                "eventName": "Tech Expo",
+                "eventBanner": "https://i.ibb.co/mDDZ0pZ/th-3.jpg",
+                "eventDate": "2023-11-20",
+                "eventLocation": "Conference Hall",
+                "eventDescription": "Showcasing innovative projects and technological advancements."
+            }
+        ],
+        "sports": [
+            {
+                "sportName": "Football",
+                "sportBanner": "https://i.ibb.co/4VRHcG2/football-banner-12215919.webp",
+                "teamSize": 11,
+                "coachName": "John Smith",
+                "trainingSchedule": "Monday, Wednesday, Friday - 4 PM to 6 PM",
+                "homeGround": "Campus Stadium"
+            },
+            {
+                "sportName": "Basketball",
+                "sportBanner": "https://i.ibb.co/ZfZFj1Q/th-4.jpg",
+                "teamSize": 5,
+                "coachName": "Emily Johnson",
+                "trainingSchedule": "Tuesday, Thursday - 5 PM to 7 PM",
+                "homeGround": "Basketball Court"
+            }
+        ]
+    },
+    {
+        "collegeImage": "https://i.ibb.co/3htszKb/327305503-470910301905318-2114882848901684960-n.jpg",
+        "collegeName": "Govt. Shaheed Bulbul  College , Pabna",
+        "minGpaSsc": "3 Out Of 5",
+        "minGpaHsc": "3.5 Out Of 5",
+        "totalGpa": "8 Out Of 10",
+        "collegeRating": 4.5,
+        "admissionDate": "2023-09-01",
+        "numberOfResearch": 150,
+        "events": [
+            {
+                "eventName": "Annual Cultural Fest Bulbul",
+                "eventBanner": "https://i.ibb.co/h7NQ31m/th-2.jpg",
+                "eventDate": "2023-10-15",
+                "eventLocation": "Campus Grounds",
+                "eventDescription": "A grand celebration of culture with music, dance, and performances."
+            },
+            {
+                "eventName": "Tech Expo",
+                "eventBanner": "https://i.ibb.co/mDDZ0pZ/th-3.jpg",
+                "eventDate": "2023-11-20",
+                "eventLocation": "Conference Hall",
+                "eventDescription": "Showcasing innovative projects and technological advancements."
+            }
+        ],
+        "sports": [
+            {
+                "sportName": "Football",
+                "sportBanner": "https://i.ibb.co/4VRHcG2/football-banner-12215919.webp",
+                "teamSize": 11,
+                "coachName": "John Smith",
+                "trainingSchedule": "Monday, Wednesday, Friday - 4 PM to 6 PM",
+                "homeGround": "Campus Stadium"
+            },
+            {
+                "sportName": "Basketball",
+                "sportBanner": "https://i.ibb.co/ZfZFj1Q/th-4.jpg",
+                "teamSize": 5,
+                "coachName": "Emily Johnson",
+                "trainingSchedule": "Tuesday, Thursday - 5 PM to 7 PM",
+                "homeGround": "Basketball Court"
+            }
+        ]
+    },
+    {
+        "collegeImage": "https://i.ibb.co/gdM9qH8/th-6.jpg",
+        "collegeName": "Govt. Women College , Pabna",
+        "minGpaSsc": "2.5 Out Of 5",
+        "minGpaHsc": "3 Out Of 5",
+        "totalGpa": "8 Out Of 10",
+        "collegeRating": 4.5,
+        "admissionDate": "2023-09-01",
+        "numberOfResearch": 150,
+        "events": [
+            {
+                "eventName": "Annual Cultural Fest Bulbul",
+                "eventBanner": "https://i.ibb.co/h7NQ31m/th-2.jpg",
+                "eventDate": "2023-10-15",
+                "eventLocation": "Campus Grounds",
+                "eventDescription": "A grand celebration of culture with music, dance, and performances."
+            },
+            {
+                "eventName": "Tech Expo",
+                "eventBanner": "https://i.ibb.co/mDDZ0pZ/th-3.jpg",
+                "eventDate": "2023-11-20",
+                "eventLocation": "Conference Hall",
+                "eventDescription": "Showcasing innovative projects and technological advancements."
+            }
+        ],
+        "sports": [
+            {
+                "sportName": "Football",
+                "sportBanner": "https://i.ibb.co/4VRHcG2/football-banner-12215919.webp",
+                "teamSize": 11,
+                "coachName": "John Smith",
+                "trainingSchedule": "Monday, Wednesday, Friday - 4 PM to 6 PM",
+                "homeGround": "Campus Stadium"
+            },
+            {
+                "sportName": "Basketball",
+                "sportBanner": "https://i.ibb.co/ZfZFj1Q/th-4.jpg",
                 "teamSize": 5,
                 "coachName": "Emily Johnson",
                 "trainingSchedule": "Tuesday, Thursday - 5 PM to 7 PM",

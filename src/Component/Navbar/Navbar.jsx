@@ -1,11 +1,19 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FaBars, FaMinus } from "react-icons/fa";
 import Menu from "./Menu";
-
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../AuthProvaider/AuthProvaider";
 const Navbar = () => {
 
+    const { user, logOut } = useContext(AuthContext)
     const [menu, setMenu] = useState(false);
-    // console.log(menu)
+    const navigate=useNavigate();
+    // console.log(user)
+    const handleLogOut = () => {
+        logOut()
+        navigate('/login')
+        console.log('logout')
+    }
 
     return (
         <div className='bg-slate-300 '>
@@ -15,37 +23,44 @@ const Navbar = () => {
                 <div className=''>Logo</div>
 
 
-                <div className='hidden md:flex gap-8'>
-                    <Menu></Menu>
+                <div className='hidden md:flex items-center gap-6'>
+                    <Menu
+                        handleLogOut={handleLogOut}
+                    ></Menu>
 
                 </div>
 
                 {
                     menu &&
-                    <div className=" lg:hidden absolute top-[70px] right-0 text-xl flex flex-col gap-5 right-5py-5 px-16">
+                    <div className=" lg:hidden absolute top-[70px] right-0 text-xl flex flex-col gap-3 right-5py-5 px-16 z-40">
                         <Menu></Menu>
                     </div>
                 }
 
 
                 <div className=''>
-                    <span className="hidden  md:flex"> Bar</span>
+                    {
+                        user ?
+                            <button onClick={handleLogOut} className="hidden  md:flex  btn btn-outline">Log Out</button> :
+                            <Link to='/login' className="hidden  md:flex text-lg btn btn-outline">Login</Link>
+                    }
+
                     {
                         menu ? <button
                             onClick={() => { setMenu(!menu) }}
                             className="flex md:hidden">
-                            <FaMinus  className="text-2xl"/>
+                            <FaMinus className="text-2xl" />
                         </button>
                             :
                             <>
-                            <button
-                                onClick={() => { setMenu(!menu) }}
-                                className="flex md:hidden">
-                                <FaBars  className="text-2xl "/>
-                            </button>
+                                <button
+                                    onClick={() => { setMenu(!menu) }}
+                                    className="flex md:hidden">
+                                    <FaBars className="text-2xl " />
+                                </button>
 
                             </>
-                            
+
                     }
 
 

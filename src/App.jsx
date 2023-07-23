@@ -7,7 +7,10 @@ function App() {
   return (
    <>
    <Navbar></Navbar>
-   <Outlet></Outlet>
+   <div className='max-w-[1250px] container  mx-auto min-h-[80vh]'>
+     <Outlet></Outlet>
+   </div>
+  
    </>
   )
 }

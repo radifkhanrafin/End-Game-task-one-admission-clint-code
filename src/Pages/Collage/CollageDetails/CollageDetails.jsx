@@ -14,11 +14,11 @@ const CollageDetails = () => {
     console.log(collageEvent)
     console.log(collageSports)
     return (
-        <div>
-            <div className='min-h-[70vh]'>
-                <h1 className='capitalize text-4xl text-center font-semibold mt-14'>Our Events facilities</h1>
+        <div className='flex flex-col gap-24 lg:gap-10'>
+            <div className='min-h-[70vh] mb-12'>
+                <h1 className='capitalize text-4xl text-center font-semibold my-14 '>Our Events facilities</h1>
 
-                <div>
+                <div className='flex flex-col  gap-64 lg:gap-16'>
                     {
                         collageEvent?.map(collageEvent => <CollageEvent
                         key={collageEvent.eventName}
@@ -28,10 +28,10 @@ const CollageDetails = () => {
                     }
                 </div>
             </div>
-            <div>
-                <h1 className='capitalize text-4xl text-center font-semibold mt-14'>Our Events facilities</h1>
+            <div className='mt-12'>
+                <h1 className='capitalize text-4xl text-center font-semibold my-12'>Our Sports facilities</h1>
 
-                <div>
+                <div className='flex flex-col  gap-64 lg:gap-16'>
                     {
                         collageSports?.map(collageSport => <CollageSports
                         key={collageSport.sportName}
