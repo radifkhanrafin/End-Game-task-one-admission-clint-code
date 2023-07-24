@@ -6,8 +6,8 @@ const HomeSectionOne = () => {
     const [collageData, setCollageData] = useState([])
 
     useEffect(() => {
-        // fetch('/src/Pages/Collage/collageData.json')
-        fetch('http://localhost:5000/collage')
+        // fetch('http://localhost:5000/collage')
+        fetch('https://collage-admission-server-psi.vercel.app/collage')
             .then(res => res.json())
             .then(data => setCollageData(data))
     }, []);

@@ -34,7 +34,8 @@ const AdmissionForm = () => {
             status: "Pending"
         }
         console.log(admissionInfo)
-        fetch('http://localhost:5000/admissionInfo', {
+        // fetch('http://localhost:5000/admissionInfo', {
+        fetch('https://collage-admission-server-psi.vercel.app/admissionInfo', {
             method: "POST",
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(admissionInfo)

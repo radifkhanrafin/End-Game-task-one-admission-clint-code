@@ -7,7 +7,7 @@ const MyCollageData = ({ application }) => {
     const admissionCollage = Admissioncollagedata.state;
     console.log(admissionCollage.college_id)
     useEffect(() => {
-        fetch(`http://localhost:5000/myadmissioncollage/${admissionCollage.college_id}`)
+        fetch(`https://collage-admission-server-psi.vercel.app/myadmissioncollage/${admissionCollage.college_id}`)
             .then(res => res.json())
             .then(data => {
                 console.log('my collage', data)

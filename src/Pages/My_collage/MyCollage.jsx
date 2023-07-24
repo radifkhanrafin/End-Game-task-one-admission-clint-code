@@ -18,8 +18,8 @@ const MyCollage = () => {
     // })
 
     useEffect(() => {
-        // fetch('/src/Pages/Collage/collageData.json')
-        fetch(`http://localhost:5000/myadmissionInfo/${user?.email}`)
+        // fetch(`http://localhost:5000/myadmissionInfo/${user?.email}`)
+        fetch(`https://collage-admission-server-psi.vercel.app/myadmissionInfo/${user?.email}`)
             .then(res => res.json())
             .then(data => setMysubmission(data))
     }, []);

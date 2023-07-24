@@ -9,6 +9,7 @@ const useAxiosSecure = () => {
 
     const axiosSecure = axios.create({
         baseURL: 'http://localhost:5000/',
+        baseURL: 'https://collage-admission-server-psi.vercel.app/',
     });
 
     useEffect(() => {

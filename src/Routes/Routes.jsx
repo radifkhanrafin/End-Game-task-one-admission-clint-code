@@ -13,6 +13,7 @@ import MyCollage from "../Pages/My_collage/MyCollage";
 import MyCollageData from "../Pages/My_collage/MyCollageData/MyCollageData";
 import Home from "../Pages/Home/Home";
 import DetailsAdmisson from "../Component/DetailsAdmisson/DetailsAdmisson";
+import PrivateRoutes from "./PrivateRoutes";
 
 const router = createBrowserRouter([
     {
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/detailsadmisson',
-                element: <DetailsAdmisson></DetailsAdmisson>
+                element: <PrivateRoutes><DetailsAdmisson></DetailsAdmisson></PrivateRoutes>
             },
             {
                 path: '/admissionform',
@@ -46,7 +47,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/mycollage',
-                element: <MyCollage></MyCollage>
+                element: <PrivateRoutes><MyCollage></MyCollage></PrivateRoutes>
             },
             {
                 path: '/mycollagedata',
