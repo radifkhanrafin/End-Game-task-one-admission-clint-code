@@ -11,6 +11,7 @@ import Admission from "../Pages/Admission/Admission";
 import AdmissionForm from "../Component/AdmissionForm/AdmissionForm";
 import MyCollage from "../Pages/My_collage/MyCollage";
 import MyCollageData from "../Pages/My_collage/MyCollageData/MyCollageData";
+import Home from "../Pages/Home/Home";
 
 const router = createBrowserRouter([
     {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
         element: <App></App>,
         // errorElement:<ErrorPage></ErrorPage>,
         children: [
+            {
+                path: '/',
+                element: <Home></Home>
+            },
             {
                 path: '/collage',
                 element: <Collage></Collage>

@@ -8,7 +8,7 @@ const CollageCard = ({ collage }) => {
             <div className="card-body capitalize">
                 <h2 className="card-title">{collegeName}</h2>
                 <p>Rating : {collegeRating}</p>
-                <p>Our Admission Date : {admissionDate}</p>
+                <p>Our Admission Date : {admissionDate.end_date}</p>
                 <p>number of the research : {numberOfResearch}</p>
                 <div className="card-actions justify-end">
                     <Link state={collage} to='/collage-details'>

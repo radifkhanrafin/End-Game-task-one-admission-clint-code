@@ -8,8 +8,8 @@ const Collage = () => {
     const [axiosSecure] = useAxiosSecure();
 
     useEffect(() => {
-        // fetch('/src/Pages/Collage/collageData.json')
-        fetch('http://localhost:5000/collage')
+        fetch('/src/Pages/Collage/collageData.json')
+            // fetch('http://localhost:5000/collage')
             .then(res => res.json())
             .then(data => setCollageData(data))
     }, []);
@@ -22,7 +22,7 @@ const Collage = () => {
     // })
     // console.log(collageData)
     // const token=localStorage.getItem('access-token')
-    // console.log(token)
+    console.log(collageData)
 
     return (
         <div>

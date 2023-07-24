@@ -6,9 +6,24 @@
         "minGpaHsc": "5 Out Of 5",
         "totalGpa": "10 Out Of 10",
         "collegeRating": 4.5,
-        "admissionDate": "2023-09-01",
+        "admissionDate": {
+            "start_date": "2023-09-01",
+            "end_date": "2023-12-15"
+        },
+        "required_documents": [
+            "High school transcript",
+            "Letters of recommendation",
+            "Personal statement/essay",
+            "Application fee receipt"
+        ],
         "numberOfResearch": 150,
-        
+        "research": [
+            "Sustainable Agriculture and Food Security",
+            "The Future of Electric Vehicles",
+            "Economic Impacts of Global Pandemics",
+            "Ethical Considerations in AI Development",
+            "Impact of Online Learning on Student Performance"
+        ],
         "events": [
             {
                 "eventName": "Annual Cultural Fest Rajshahi",
@@ -51,8 +66,24 @@
         "minGpaHsc": "4 Out Of 5",
         "totalGpa": "9 Out Of 10",
         "collegeRating": 4.5,
-        "admissionDate": "2023-09-01",
+        "admissionDate": {
+            "start_date": "2023-09-01",
+            "end_date": "2023-12-15"
+        },
+        "required_documents": [
+            "High school transcript",
+            "Letters of recommendation",
+            "Personal statement/essay",
+            "Application fee receipt"
+        ],
         "numberOfResearch": 150,
+        "research": [
+            "Impact of Online Learning on Student Performance",
+            "Economic Impacts of Global Pandemics",
+            "Ethical Considerations in AI Development",
+            "Sustainable Agriculture and Food Security",
+            "The Future of Electric Vehicles"
+        ],
         "events": [
             {
                 "eventName": "Annual Cultural Fest Rajshahi",
@@ -95,8 +126,24 @@
         "minGpaHsc": "4 Out Of 5",
         "totalGpa": "10 Out Of 10",
         "collegeRating": 4.5,
-        "admissionDate": "2023-09-01",
+        "admissionDate": {
+            "start_date": "2023-09-01",
+            "end_date": "2023-12-15"
+        },
+        "required_documents": [
+            "High school transcript",
+            "Letters of recommendation",
+            "Personal statement/essay",
+            "Application fee receipt"
+        ],
         "numberOfResearch": 150,
+        "research": [
+            "Ethical Considerations in AI Development",
+            "The Future of Electric Vehicles",
+            "Economic Impacts of Global Pandemics",
+            "Sustainable Agriculture and Food Security",
+            "Impact of Online Learning on Student Performance"
+        ],
         "events": [
             {
                 "eventName": "Annual Cultural Fest Edward",
@@ -139,8 +186,24 @@
         "minGpaHsc": "3.5 Out Of 5",
         "totalGpa": "8 Out Of 10",
         "collegeRating": 4.5,
-        "admissionDate": "2023-09-01",
+        "admissionDate": {
+            "start_date": "2023-09-01",
+            "end_date": "2023-12-15"
+        },
+        "required_documents": [
+            "High school transcript",
+            "Letters of recommendation",
+            "Personal statement/essay",
+            "Application fee receipt"
+        ],
         "numberOfResearch": 150,
+        "research": [
+            "Economic Impacts of Global Pandemics",
+            "Ethical Considerations in AI Development",
+            "Sustainable Agriculture and Food Security",
+            "The Future of Electric Vehicles",
+            "Impact of Online Learning on Student Performance"
+        ],
         "events": [
             {
                 "eventName": "Annual Cultural Fest Bulbul",
@@ -183,8 +246,24 @@
         "minGpaHsc": "3 Out Of 5",
         "totalGpa": "8 Out Of 10",
         "collegeRating": 4.5,
-        "admissionDate": "2023-09-01",
+        "admissionDate": {
+            "start_date": "2023-09-01",
+            "end_date": "2023-12-15"
+        },
+        "required_documents": [
+            "High school transcript",
+            "Letters of recommendation",
+            "Personal statement/essay",
+            "Application fee receipt"
+        ],
         "numberOfResearch": 150,
+        "research": [
+            "The Impact of Social Media on Mental Health",
+            "Advancements in Quantum Computing",
+            "Gender Representation in STEM Fields",
+            "The Role of Artificial Intelligence in Healthcare",
+            "Climate Change Mitigation Strategies for Urban Areas"
+        ],
         "events": [
             {
                 "eventName": "Annual Cultural Fest Bulbul",
