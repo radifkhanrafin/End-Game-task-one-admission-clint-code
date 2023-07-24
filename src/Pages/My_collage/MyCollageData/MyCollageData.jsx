@@ -5,7 +5,7 @@ const MyCollageData = ({ application }) => {
     const [mysubmissionCollage, setMysubmissionCollage] = useState([])
     const Admissioncollagedata = useLocation()
     const admissionCollage = Admissioncollagedata.state;
-    console.log(admissionCollage.college_id)
+    // console.log(admissionCollage.college_id)
     useEffect(() => {
         fetch(`http://localhost:5000/myadmissioncollage/${admissionCollage.college_id}`)
             .then(res => res.json())

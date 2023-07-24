@@ -6,7 +6,6 @@ import { useQuery } from "react-query";
 const Collage = () => {
     const [collageData, setCollageData] = useState([])
     const [axiosSecure] = useAxiosSecure();
-    console.log(axiosSecure)
 
     useEffect(() => {
         // fetch('/src/Pages/Collage/collageData.json')
@@ -27,7 +26,6 @@ const Collage = () => {
 
     return (
         <div>
-            tuki
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4  mt-12'>
                 {
                     collageData.map(collage => <CollageCard
