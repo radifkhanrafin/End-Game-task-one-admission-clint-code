@@ -1,5 +1,5 @@
 import React, { Children, createContext, useEffect, useState } from 'react';
-import { getAuth, createUserWithEmailAndPassword, GoogleAuthProvider, updateProfile, signInWithEmailAndPassword, signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, GoogleAuthProvider, updateProfile, signInWithEmailAndPassword, signInWithPopup, signOut, onAuthStateChanged, sendPasswordResetEmail } from "firebase/auth";
 import app from '../firebase/firebase.config';
 import useAxiosSecure from '../CustomHook/useAxiosSecure/useAxiosSecure';
 
@@ -23,7 +23,9 @@ const AuthProvaider = ({ children }) => {
             displayName: name, photoURL: photo
         });
     }
-
+    const changePassword = () => {
+        return sendPasswordResetEmail(Auth , email)
+    }
 
     const login = (email, password) => {
         setLoading(true)
@@ -68,7 +70,8 @@ const AuthProvaider = ({ children }) => {
         login,
         logOut,
         googleLogin,
-        updateUserProfile
+        updateUserProfile,
+        changePassword
     }
     return (
         <AuthContext.Provider value={Authinfo}>

@@ -19,7 +19,7 @@ const CollageAllDetails = ({ collage }) => {
                     <h1> <span className='font-semibold'>Our Sports  :</span> {sports.map(e=> <li>{e.sportName}</li>)}</h1>
                     <div className="">
                         <Link state={collage} to='/detailsadmisson'>
-                            <button className="btn btn-outline w-full ">Details</button>
+                            <button className="btn btn-outline w-full ">About Collage</button>
                         </Link>
 
                     </div>

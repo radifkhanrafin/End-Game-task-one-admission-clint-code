@@ -6,8 +6,8 @@ const HomeSectionOne = () => {
     const [collageData, setCollageData] = useState([])
 
     useEffect(() => {
-        fetch('/src/Pages/Collage/collageData.json')
-            // fetch('http://localhost:5000/collage')
+        // fetch('/src/Pages/Collage/collageData.json')
+        fetch('http://localhost:5000/collage')
             .then(res => res.json())
             .then(data => setCollageData(data))
     }, []);
@@ -16,7 +16,7 @@ const HomeSectionOne = () => {
         <div>
             <div className='grid grid-cols-1  gap-4  mt-12'>
                 {
-                    collageData.map(collage => <CollageAllDetails
+                    collageData?.map(collage => <CollageAllDetails
                         key={collage._id}
                         collage={collage}
                     ></CollageAllDetails>)

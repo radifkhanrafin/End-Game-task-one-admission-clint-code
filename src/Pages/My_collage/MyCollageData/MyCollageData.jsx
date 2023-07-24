@@ -1,32 +1,37 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import {  } from "moment";
+import { } from "moment";
 const MyCollageData = ({ application }) => {
     const [mysubmissionCollage, setMysubmissionCollage] = useState([])
     const Admissioncollagedata = useLocation()
     const admissionCollage = Admissioncollagedata.state;
-    // console.log(admissionCollage.college_id)
+    console.log(admissionCollage.college_id)
     useEffect(() => {
         fetch(`http://localhost:5000/myadmissioncollage/${admissionCollage.college_id}`)
             .then(res => res.json())
-            .then(data => setMysubmissionCollage(data))
+            .then(data => {
+                console.log('my collage', data)
+                setMysubmissionCollage(data)
+            })
     }, []);
     return (
         <div>
             <div>
                 {
                     mysubmissionCollage?.map(collage =>
-                        <div key={collage._id} className="hero h-96 bg-base-200">
-                            <div className="hero-content flex-col lg:flex-row">
-                                <img src={collage.collegeImage} className="max-w-lg w-96 rounded-lg shadow-2xl" />
-                                <div className=' mb-20 space-y-4 mt-10 py-6'>
-                                    <h1 className="text-4xl "> <span className='font-semibold'> {collage.collegeName}</span></h1>
-                                    <p className="text-lg">Number Of Research : {collage.numberOfResearch}</p>
-                                    <p className="">Student Feedback : {collage.collegeRating}</p>
-                                    <p className=""> Admission Date :  {collage.admissionDate}</p>
-                                </div>
+                        <div className="card-body capitalize">
+                            <div>
+                                <h2 className="card-title">{collage.collegeName}</h2>
+                                <p> <span className='font-semibold'>Our Admission Start Date : </span> {collage.admissionDate.start_date}</p>
+                                <p> <span className='font-semibold'>Our Admission End Date :</span>  {collage.admissionDate.end_date}</p>
+                                <p> <span className='font-semibold'>number of the research :</span> {collage.numberOfResearch}</p>
                             </div>
-                        </div>)
+                            <h1 className='text-end'><span className='font-semibold'>Our research History :</span>{collage.research.map(example => <p key={example}> {example}</p>)} </h1>
+
+                            <h1 className=''> <span className='font-semibold'>Our Event :</span>  {collage.events.map(e => <li>{e.eventName}</li>)}</h1>
+                            <h1 className='text-end'> <span className='font-semibold'>Our Sports  :</span> {collage.sports.map(e => <p>{e.sportName}</p>)}</h1>
+                        </div>
+                    )
                 }
             </div>
 

@@ -5,7 +5,6 @@ import CollageSportsHomepage from '../CollageSportsHomepage/CollageSportsHomepag
 
 const DetailsAdmisson = () => {
     const collageData = useLocation();
-    const collageEvent = collageData.state.events;
     const collage = collageData.state;
     console.log(collage)
     return (
