@@ -5,6 +5,7 @@ import SocalLogin from '../../Component/SocalLogin/SocalLogin';
 import { Link, useNavigate } from "react-router-dom";
 import { FaMinus } from 'react-icons/fa';
 import { AuthContext } from '../../AuthProvaider/AuthProvaider';
+import Swal from 'sweetalert2';
 
 const Login = () => {
     const [modal, setModal] = useState(false);
@@ -19,7 +20,25 @@ const Login = () => {
         console.log(email, password)
         login(email, password)
             .then(result => {
+
                 console.log(result.user)
+                const user = result.user;
+                const userinfo = { name: user.displayName, email: user.email, userProfile: user.photoURL };
+                console.log(userinfo)
+                fetch('http://localhost:5000/users', {
+                    // fetch('https://collage-admission-server-psi.vercel.app/user', {
+                    method: "POST",
+                    headers: { 'content-type': 'application/json' },
+                    body: JSON.stringify(userinfo)
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        if (data.insertedId) {
+                            console.log('data', data)
+                            Swal.fire('User Added Successfull')
+                        }
+
+                    })
                 navigate('/')
             })
             .catch(error => console.log(error))

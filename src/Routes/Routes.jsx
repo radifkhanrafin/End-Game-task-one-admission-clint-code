@@ -14,12 +14,13 @@ import MyCollageData from "../Pages/My_collage/MyCollageData/MyCollageData";
 import Home from "../Pages/Home/Home";
 import DetailsAdmisson from "../Component/DetailsAdmisson/DetailsAdmisson";
 import PrivateRoutes from "./PrivateRoutes";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <App></App>,
-        // errorElement:<ErrorPage></ErrorPage>,
+        errorElement:<ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
