@@ -23,7 +23,7 @@ const AuthProvaider = ({ children }) => {
             displayName: name, photoURL: photo
         });
     }
-    const changePassword = () => {
+    const resetYourPass = () => {
         return sendPasswordResetEmail(Auth , email)
     }
 
@@ -71,7 +71,7 @@ const AuthProvaider = ({ children }) => {
         logOut,
         googleLogin,
         updateUserProfile,
-        changePassword
+        resetYourPass
     }
     return (
         <AuthContext.Provider value={Authinfo}>

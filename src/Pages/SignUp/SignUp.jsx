@@ -1,31 +1,29 @@
 import React, { useContext } from 'react';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Lottie from "lottie-react";
 import SocalLogin from '../../Component/SocalLogin/SocalLogin';
 import signupanimation from "../../../public/animation_lke04xi2.json";
 import { AuthContext } from '../../AuthProvaider/AuthProvaider';
 const SignUp = () => {
 
-    const { createUser ,updateUserProfile } = useContext(AuthContext);
-
+    const { createUser, updateUserProfile } = useContext(AuthContext);
+    const navigate = useNavigate()
     const handleSignUp = (event) => {
         event.preventDefault()
         const form = event.target;
-        const name = form.name.value
-        const email = form.email.value
-        const password = form.password.value
-        const photo = form.photo.value
-
-        console.log(name)
-        console.log(email)
-        console.log(password)
-        console.log(photo)
+        const name = form.name.value;
+        const email = form.email.value;
+        const password = form.password.value;
+        const photo = form.photo.value;
 
         createUser(email, password)
             .then(result => {
                 console.log(result.user)
                 updateUserProfile(name, photo)
-                    .then(result = result.user)
+                    .then(result => {
+                        navigate('/')
+                        console.log(result.user)
+                    })
                     .catch(error => console.log(error))
             })
             .catch(error => {
