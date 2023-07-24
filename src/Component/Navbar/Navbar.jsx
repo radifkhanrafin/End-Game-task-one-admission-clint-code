@@ -20,7 +20,9 @@ const Navbar = () => {
             <div className='flex justify-between items-center max-w-[1250px] container mx-auto h-16 px-16 lg:px-0'>
 
 
-                <div className=''>Logo</div>
+                <div className=''>
+                    <img className="w-14" src="https://i.ibb.co/qYwCnZZ/logo.png" alt="" />
+                </div>
 
 
                 <div className='hidden md:flex items-center gap-6'>
@@ -33,7 +35,9 @@ const Navbar = () => {
                 {
                     menu &&
                     <div className=" lg:hidden absolute top-[70px] right-0 text-xl flex flex-col gap-3 right-5py-5 px-16 z-40">
-                        <Menu></Menu>
+                        <Menu
+                         handleLogOut={handleLogOut}
+                        ></Menu>
                     </div>
                 }
 
