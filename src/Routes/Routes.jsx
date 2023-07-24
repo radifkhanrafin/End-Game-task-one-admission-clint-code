@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <App></App>,
-        errorElement:<ErrorPage></ErrorPage>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
@@ -40,11 +40,11 @@ const router = createBrowserRouter([
             },
             {
                 path: '/admissionform',
-                element: <AdmissionForm></AdmissionForm>
+                element: <PrivateRoutes><AdmissionForm></AdmissionForm></PrivateRoutes>
             },
             {
                 path: '/collage-details',
-                element: <CollageDetails></CollageDetails>
+                element: <PrivateRoutes><CollageDetails></CollageDetails></PrivateRoutes>
             },
             {
                 path: '/mycollage',
