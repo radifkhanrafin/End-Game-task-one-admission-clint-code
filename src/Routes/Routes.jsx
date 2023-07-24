@@ -12,6 +12,7 @@ import AdmissionForm from "../Component/AdmissionForm/AdmissionForm";
 import MyCollage from "../Pages/My_collage/MyCollage";
 import MyCollageData from "../Pages/My_collage/MyCollageData/MyCollageData";
 import Home from "../Pages/Home/Home";
+import DetailsAdmisson from "../Component/DetailsAdmisson/DetailsAdmisson";
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
             {
                 path: '/admission',
                 element: <Admission></Admission>
+            },
+            {
+                path: '/detailsadmisson',
+                element: <DetailsAdmisson></DetailsAdmisson>
             },
             {
                 path: '/admissionform',
